@@ -7,14 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9839DA2B1E41376700A65F25 /* SingleTone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9839DA2A1E41376700A65F25 /* SingleTone.swift */; };
+		98542BB31E394B1B008D8D6A /* CarwashCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98542BB21E394B1B008D8D6A /* CarwashCell.swift */; };
+		98542BB51E3959A1008D8D6A /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98542BB41E3959A1008D8D6A /* Transfer.swift */; };
+		985C38E71E3CD65800E08D6C /* CarwashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985C38E61E3CD65800E08D6C /* CarwashScreenViewController.swift */; };
+		986B03D61E51D51300C5362D /* NearestPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986B03D51E51D51300C5362D /* NearestPlaceViewController.swift */; };
+		986E7AFF1E3882AB002C272E /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986E7AFE1E3882AB002C272E /* ServerManager.swift */; };
 		9877B7F21E3874550058DFF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9877B7F11E3874550058DFF0 /* AppDelegate.swift */; };
 		9877B7F41E3874550058DFF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9877B7F31E3874550058DFF0 /* ViewController.swift */; };
 		9877B7F71E3874550058DFF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9877B7F51E3874550058DFF0 /* Main.storyboard */; };
 		9877B7F91E3874550058DFF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9877B7F81E3874550058DFF0 /* Assets.xcassets */; };
 		9877B7FC1E3874550058DFF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9877B7FA1E3874550058DFF0 /* LaunchScreen.storyboard */; };
+		9877B8041E38790D0058DFF0 /* CarwashesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9877B8031E38790D0058DFF0 /* CarwashesListViewController.swift */; };
+		9879F5AE1E38805D000A9799 /* Carwash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9879F5AD1E38805D000A9799 /* Carwash.swift */; };
+		98EC1FED1E3F8EC900D0DB5D /* BringingFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EC1FEC1E3F8EC900D0DB5D /* BringingFile.m */; };
+		98EC1FEF1E3FA73700D0DB5D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EC1FEE1E3FA73700D0DB5D /* MapViewController.swift */; };
+		F54746BCED6D4D925577764B /* Pods_Carwashapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C60CCAA37482EE0A391FF7 /* Pods_Carwashapp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32E8981EE57DD1B43D1D9969 /* Pods-Carwashapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carwashapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carwashapp/Pods-Carwashapp.debug.xcconfig"; sourceTree = "<group>"; };
+		58C60CCAA37482EE0A391FF7 /* Pods_Carwashapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carwashapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9839DA2A1E41376700A65F25 /* SingleTone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleTone.swift; sourceTree = "<group>"; };
+		98542BB21E394B1B008D8D6A /* CarwashCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarwashCell.swift; sourceTree = "<group>"; };
+		98542BB41E3959A1008D8D6A /* Transfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transfer.swift; sourceTree = "<group>"; };
+		985C38E61E3CD65800E08D6C /* CarwashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarwashScreenViewController.swift; sourceTree = "<group>"; };
+		986B03D51E51D51300C5362D /* NearestPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearestPlaceViewController.swift; sourceTree = "<group>"; };
+		986E7AFE1E3882AB002C272E /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		9877B7EE1E3874550058DFF0 /* Carwashapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carwashapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9877B7F11E3874550058DFF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9877B7F31E3874550058DFF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +41,11 @@
 		9877B7F81E3874550058DFF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9877B7FB1E3874550058DFF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9877B7FD1E3874550058DFF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9877B8031E38790D0058DFF0 /* CarwashesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarwashesListViewController.swift; sourceTree = "<group>"; };
+		9879F5AD1E38805D000A9799 /* Carwash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Carwash.swift; sourceTree = "<group>"; };
+		98EC1FEC1E3F8EC900D0DB5D /* BringingFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BringingFile.m; sourceTree = "<group>"; };
+		98EC1FEE1E3FA73700D0DB5D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C40C1F87013BDC5C5F494634 /* Pods-Carwashapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carwashapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carwashapp/Pods-Carwashapp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54746BCED6D4D925577764B /* Pods_Carwashapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2351C4B8C9019EA58A964D13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58C60CCAA37482EE0A391FF7 /* Pods_Carwashapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3ECB2B84A13E62F247F79FBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32E8981EE57DD1B43D1D9969 /* Pods-Carwashapp.debug.xcconfig */,
+				C40C1F87013BDC5C5F494634 /* Pods-Carwashapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9877B7E51E3874550058DFF0 = {
 			isa = PBXGroup;
 			children = (
 				9877B7F01E3874550058DFF0 /* Carwashapp */,
 				9877B7EF1E3874550058DFF0 /* Products */,
+				3ECB2B84A13E62F247F79FBD /* Pods */,
+				2351C4B8C9019EA58A964D13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +100,20 @@
 			children = (
 				9877B7F11E3874550058DFF0 /* AppDelegate.swift */,
 				9877B7F31E3874550058DFF0 /* ViewController.swift */,
+				9877B8031E38790D0058DFF0 /* CarwashesListViewController.swift */,
 				9877B7F51E3874550058DFF0 /* Main.storyboard */,
+				985C38E61E3CD65800E08D6C /* CarwashScreenViewController.swift */,
+				98542BB21E394B1B008D8D6A /* CarwashCell.swift */,
+				986B03D51E51D51300C5362D /* NearestPlaceViewController.swift */,
+				9879F5AD1E38805D000A9799 /* Carwash.swift */,
+				98EC1FEE1E3FA73700D0DB5D /* MapViewController.swift */,
+				9839DA2A1E41376700A65F25 /* SingleTone.swift */,
+				986E7AFE1E3882AB002C272E /* ServerManager.swift */,
+				98542BB41E3959A1008D8D6A /* Transfer.swift */,
 				9877B7F81E3874550058DFF0 /* Assets.xcassets */,
 				9877B7FA1E3874550058DFF0 /* LaunchScreen.storyboard */,
 				9877B7FD1E3874550058DFF0 /* Info.plist */,
+				98EC1FEC1E3F8EC900D0DB5D /* BringingFile.m */,
 			);
 			path = Carwashapp;
 			sourceTree = "<group>";
@@ -71,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9877B8001E3874550058DFF0 /* Build configuration list for PBXNativeTarget "Carwashapp" */;
 			buildPhases = (
+				607FE4EBC37701E9F18744F0 /* [CP] Check Pods Manifest.lock */,
 				9877B7EA1E3874550058DFF0 /* Sources */,
 				9877B7EB1E3874550058DFF0 /* Frameworks */,
 				9877B7EC1E3874550058DFF0 /* Resources */,
+				767451048919A5BA4E7D3683 /* [CP] Embed Pods Frameworks */,
+				F28052DC2BDA5679F4FDA259 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +153,7 @@
 				TargetAttributes = {
 					9877B7ED1E3874550058DFF0 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,13 +189,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		607FE4EBC37701E9F18744F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		767451048919A5BA4E7D3683 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carwashapp/Pods-Carwashapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F28052DC2BDA5679F4FDA259 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carwashapp/Pods-Carwashapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9877B7EA1E3874550058DFF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				986E7AFF1E3882AB002C272E /* ServerManager.swift in Sources */,
+				98542BB51E3959A1008D8D6A /* Transfer.swift in Sources */,
+				986B03D61E51D51300C5362D /* NearestPlaceViewController.swift in Sources */,
+				98542BB31E394B1B008D8D6A /* CarwashCell.swift in Sources */,
+				98EC1FEF1E3FA73700D0DB5D /* MapViewController.swift in Sources */,
 				9877B7F41E3874550058DFF0 /* ViewController.swift in Sources */,
+				9879F5AE1E38805D000A9799 /* Carwash.swift in Sources */,
+				98EC1FED1E3F8EC900D0DB5D /* BringingFile.m in Sources */,
+				9839DA2B1E41376700A65F25 /* SingleTone.swift in Sources */,
 				9877B7F21E3874550058DFF0 /* AppDelegate.swift in Sources */,
+				9877B8041E38790D0058DFF0 /* CarwashesListViewController.swift in Sources */,
+				985C38E71E3CD65800E08D6C /* CarwashScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,24 +372,31 @@
 		};
 		9877B8011E3874550058DFF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32E8981EE57DD1B43D1D9969 /* Pods-Carwashapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Carwashapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Obarg.Carwashapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Carwashapp/Carwashapp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		9877B8021E3874550058DFF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C40C1F87013BDC5C5F494634 /* Pods-Carwashapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Carwashapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Obarg.Carwashapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Carwashapp/Carwashapp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -297,6 +420,7 @@
 				9877B8021E3874550058DFF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
