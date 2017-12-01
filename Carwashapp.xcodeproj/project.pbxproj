@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		981B88FC1E938E000056B592 /* PhoneNumberCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981B88FB1E938E000056B592 /* PhoneNumberCheckViewController.swift */; };
 		9839DA2B1E41376700A65F25 /* SingleTone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9839DA2A1E41376700A65F25 /* SingleTone.swift */; };
 		98542BB31E394B1B008D8D6A /* CarwashCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98542BB21E394B1B008D8D6A /* CarwashCell.swift */; };
 		98542BB51E3959A1008D8D6A /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98542BB41E3959A1008D8D6A /* Transfer.swift */; };
@@ -20,6 +21,11 @@
 		9877B7FC1E3874550058DFF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9877B7FA1E3874550058DFF0 /* LaunchScreen.storyboard */; };
 		9877B8041E38790D0058DFF0 /* CarwashesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9877B8031E38790D0058DFF0 /* CarwashesListViewController.swift */; };
 		9879F5AE1E38805D000A9799 /* Carwash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9879F5AD1E38805D000A9799 /* Carwash.swift */; };
+		988CEB141E8FE1A400E0244B /* System San Francisco Display Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 988CEB101E8FE1A400E0244B /* System San Francisco Display Bold.ttf */; };
+		988CEB151E8FE1A400E0244B /* System San Francisco Display Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 988CEB111E8FE1A400E0244B /* System San Francisco Display Regular.ttf */; };
+		988CEB161E8FE1A400E0244B /* System San Francisco Display Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 988CEB121E8FE1A400E0244B /* System San Francisco Display Thin.ttf */; };
+		988CEB171E8FE1A400E0244B /* System San Francisco Display Ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 988CEB131E8FE1A400E0244B /* System San Francisco Display Ultralight.ttf */; };
+		98EB13C21E6D84FF001A0DAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EB13C11E6D84FF001A0DAD /* User.swift */; };
 		98EC1FED1E3F8EC900D0DB5D /* BringingFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EC1FEC1E3F8EC900D0DB5D /* BringingFile.m */; };
 		98EC1FEF1E3FA73700D0DB5D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EC1FEE1E3FA73700D0DB5D /* MapViewController.swift */; };
 		F54746BCED6D4D925577764B /* Pods_Carwashapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C60CCAA37482EE0A391FF7 /* Pods_Carwashapp.framework */; };
@@ -28,6 +34,7 @@
 /* Begin PBXFileReference section */
 		32E8981EE57DD1B43D1D9969 /* Pods-Carwashapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carwashapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carwashapp/Pods-Carwashapp.debug.xcconfig"; sourceTree = "<group>"; };
 		58C60CCAA37482EE0A391FF7 /* Pods_Carwashapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carwashapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		981B88FB1E938E000056B592 /* PhoneNumberCheckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberCheckViewController.swift; sourceTree = "<group>"; };
 		9839DA2A1E41376700A65F25 /* SingleTone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleTone.swift; sourceTree = "<group>"; };
 		98542BB21E394B1B008D8D6A /* CarwashCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarwashCell.swift; sourceTree = "<group>"; };
 		98542BB41E3959A1008D8D6A /* Transfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transfer.swift; sourceTree = "<group>"; };
@@ -43,6 +50,11 @@
 		9877B7FD1E3874550058DFF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9877B8031E38790D0058DFF0 /* CarwashesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarwashesListViewController.swift; sourceTree = "<group>"; };
 		9879F5AD1E38805D000A9799 /* Carwash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Carwash.swift; sourceTree = "<group>"; };
+		988CEB101E8FE1A400E0244B /* System San Francisco Display Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Bold.ttf"; sourceTree = "<group>"; };
+		988CEB111E8FE1A400E0244B /* System San Francisco Display Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Regular.ttf"; sourceTree = "<group>"; };
+		988CEB121E8FE1A400E0244B /* System San Francisco Display Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Thin.ttf"; sourceTree = "<group>"; };
+		988CEB131E8FE1A400E0244B /* System San Francisco Display Ultralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Ultralight.ttf"; sourceTree = "<group>"; };
+		98EB13C11E6D84FF001A0DAD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		98EC1FEC1E3F8EC900D0DB5D /* BringingFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BringingFile.m; sourceTree = "<group>"; };
 		98EC1FEE1E3FA73700D0DB5D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C40C1F87013BDC5C5F494634 /* Pods-Carwashapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carwashapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carwashapp/Pods-Carwashapp.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,16 +110,20 @@
 		9877B7F01E3874550058DFF0 /* Carwashapp */ = {
 			isa = PBXGroup;
 			children = (
+				988CEB0F1E8FE19600E0244B /* Fonts */,
+				98EB13C31E6D8517001A0DAD /* Models */,
+				98EB13C11E6D84FF001A0DAD /* User.swift */,
+				9879F5AD1E38805D000A9799 /* Carwash.swift */,
+				9839DA2A1E41376700A65F25 /* SingleTone.swift */,
 				9877B7F11E3874550058DFF0 /* AppDelegate.swift */,
 				9877B7F31E3874550058DFF0 /* ViewController.swift */,
 				9877B8031E38790D0058DFF0 /* CarwashesListViewController.swift */,
 				9877B7F51E3874550058DFF0 /* Main.storyboard */,
+				981B88FB1E938E000056B592 /* PhoneNumberCheckViewController.swift */,
 				985C38E61E3CD65800E08D6C /* CarwashScreenViewController.swift */,
 				98542BB21E394B1B008D8D6A /* CarwashCell.swift */,
 				986B03D51E51D51300C5362D /* NearestPlaceViewController.swift */,
-				9879F5AD1E38805D000A9799 /* Carwash.swift */,
 				98EC1FEE1E3FA73700D0DB5D /* MapViewController.swift */,
-				9839DA2A1E41376700A65F25 /* SingleTone.swift */,
 				986E7AFE1E3882AB002C272E /* ServerManager.swift */,
 				98542BB41E3959A1008D8D6A /* Transfer.swift */,
 				9877B7F81E3874550058DFF0 /* Assets.xcassets */,
@@ -116,6 +132,24 @@
 				98EC1FEC1E3F8EC900D0DB5D /* BringingFile.m */,
 			);
 			path = Carwashapp;
+			sourceTree = "<group>";
+		};
+		988CEB0F1E8FE19600E0244B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				988CEB101E8FE1A400E0244B /* System San Francisco Display Bold.ttf */,
+				988CEB111E8FE1A400E0244B /* System San Francisco Display Regular.ttf */,
+				988CEB121E8FE1A400E0244B /* System San Francisco Display Thin.ttf */,
+				988CEB131E8FE1A400E0244B /* System San Francisco Display Ultralight.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		98EB13C31E6D8517001A0DAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,8 +216,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9877B7FC1E3874550058DFF0 /* LaunchScreen.storyboard in Resources */,
+				988CEB151E8FE1A400E0244B /* System San Francisco Display Regular.ttf in Resources */,
+				988CEB171E8FE1A400E0244B /* System San Francisco Display Ultralight.ttf in Resources */,
 				9877B7F91E3874550058DFF0 /* Assets.xcassets in Resources */,
 				9877B7F71E3874550058DFF0 /* Main.storyboard in Resources */,
+				988CEB141E8FE1A400E0244B /* System San Francisco Display Bold.ttf in Resources */,
+				988CEB161E8FE1A400E0244B /* System San Francisco Display Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98EB13C21E6D84FF001A0DAD /* User.swift in Sources */,
+				981B88FC1E938E000056B592 /* PhoneNumberCheckViewController.swift in Sources */,
 				986E7AFF1E3882AB002C272E /* ServerManager.swift in Sources */,
 				98542BB51E3959A1008D8D6A /* Transfer.swift in Sources */,
 				986B03D61E51D51300C5362D /* NearestPlaceViewController.swift in Sources */,

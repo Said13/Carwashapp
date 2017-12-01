@@ -68,7 +68,7 @@ class ServerManager {
         }
     
         send(api: "/carwashes", method: .get, parameters: nil, completion: response_completion )
-        print("boom")
+        //print("boom")
     }
     
     //Transfer information

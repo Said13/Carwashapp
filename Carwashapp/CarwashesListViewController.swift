@@ -8,10 +8,15 @@
 
 import UIKit
 import CoreLocation
+import ChameleonFramework
 
 class CarwashesListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate,  CLLocationManagerDelegate{
 
     let locationManager = CLLocationManager()
+    
+    let redColor = UIColor(red: 255/255, green: 0, blue:   102/255, alpha: 1)
+    let purpleColor = UIColor(red: 33/255, green: 0, blue:   33/255, alpha: 1)
+
     
     @IBOutlet weak var carwashesTableView: UITableView!
     var allCarwashes: [Carwash] = []
@@ -20,22 +25,43 @@ class CarwashesListViewController: UIViewController, UITableViewDataSource, UITa
         super.viewDidLoad()
         
         
-        navigationController?.navigationBar.barTintColor = UIColor.flatSkyBlue
+        navigationController?.navigationBar.barTintColor = purpleColor
         navigationController?.navigationBar.tintColor = UIColor.flatWhite
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.flatWhite]
 
         carwashesTableView.dataSource = self
-        ServerManager.getCarwashes { (carwashes, error) in
-            if error != nil {
-             return
+//        ServerManager.getCarwashes { (carwashes, error) in
+//            if error != nil {
+//             return
+//            }
+//            guard let myCarwashes = carwashes else {
+//                return
+//            }
+//            self.allCarwashes = myCarwashes
+//            SingleTone.shareInstance.carwash = self.allCarwashes
+//            self.carwashesTableView.reloadData()
+//        }
+        if let myCarwashesFromList = SingleTone.shareInstance.carwash {
+            self.allCarwashes = myCarwashesFromList
+            carwashesTableView.reloadData()
+            print(allCarwashes.count)
+
+            
+        } else {
+
+            
+            ServerManager.getCarwashes { (carwashes, error) in
+                if error != nil {
+                    return
+                }
+                guard let myCarwashes = carwashes else {
+                    return
+                }
+                self.allCarwashes = myCarwashes
+                self.carwashesTableView.reloadData()
             }
-            guard let myCarwashes = carwashes else {
-                return
-            }
-            self.allCarwashes = myCarwashes
-            SingleTone.shareInstance.carwash = self.allCarwashes
-            self.carwashesTableView.reloadData()
         }
+        
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
         
@@ -43,6 +69,9 @@ class CarwashesListViewController: UIViewController, UITableViewDataSource, UITa
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
+            
+            allCarwashes.sort { $0.distance! < $1.distance! }
+
         }
         
         
@@ -61,30 +90,7 @@ class CarwashesListViewController: UIViewController, UITableViewDataSource, UITa
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         let myLocation = locations.last
-        /*
-        // update only if user moved more than on 100
-        if firstLocation || lastLocation.distance(from: myLocation!) > 100 {
-            for place in self.places{
-                guard let placeLatitude = place.latitude,
-                    let placeLongitute = place.longitude else {
-                        return
-                }
-                let lat1 : NSString = placeLatitude as NSString
-                let lng1 : NSString = placeLongitute as NSString
-                
-                let latitute: CLLocationDegrees = lat1.doubleValue
-                let longitute: CLLocationDegrees = lng1.doubleValue
-                let placeLocation = CLLocation(latitude: latitute, longitude: longitute)
-                let d = myLocation!.distance(from: placeLocation) / 1000
-                place.distance = Double(round(10*d)/10)
-                
-                firstLocation = false
-                
-            }
-            guard let myLoc = myLocation else { return }
-            lastLocation = myLoc
-            tableView.reloadData()
-        }*/
+        
         for carwash in allCarwashes {
             let dest_lat = carwash.coordinate_latitude
             let dest_lon = carwash.coordinate_longitude
@@ -108,25 +114,11 @@ class CarwashesListViewController: UIViewController, UITableViewDataSource, UITa
             //let placeLocation = CLLocation(latitude: latitute!, longitude: longitute!)
             let placeLocation = CLLocation(latitude: latitute!, longitude: longitute!)
             let d = (myLocation!.distance(from: placeLocation)) / 1000//ПОМЕНЯТЬ НА 1000
-            //let km = " km."
-            //let myAttribute = [ NSFontAttributeName: UIFont(name: "System", size: 12.0)! ]
-            //let myAttrString = NSAttributedString(string: km, attributes: myAttribute)
             
             carwash.distance = Double(round(10*d)/10).description //+ myAttrString.description
-            
+            //print(carwash.distance)
             carwashesTableView.reloadData()
-            
-
-            /*ServerManager.getTransferInfo(latitude: latitude, longitude: longitude, dest: destination, completion: { (transfer, error) in
-                if error != nil {
-                    return
-                } else {
-                    carwash.destination = transfer?.distance
-                    carwash.duration = transfer?.duration
-                    self.carwashesTableView.reloadData()
-                }
-            })*/
-        }
+            }
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

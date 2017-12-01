@@ -20,18 +20,26 @@ class Carwash : Mappable{
     var distance: String?
     var imagePath: String?
     var mainImage: UIImage?
+    var phone: String?
+    var website: String?
+    var dayandnight: String?
+    var till:String?
     
     required init?(map: Map) {
         
     }
     
-    init(id: Int, name: String, coordinate_latitude: String, coordinate_longitude: String, address: String, imagePath: String) {
+    init(id: Int, name: String, coordinate_latitude: String, coordinate_longitude: String, address: String, imagePath: String, phone: String, website: String,dayandnight: String, till: String ) {
         self.id = id
         self.name = name
         self.coordinate_latitude = coordinate_latitude
         self.coordinate_longitude = coordinate_longitude
         self.address = address
         self.imagePath = imagePath
+        self.phone = phone
+        self.website = website
+        self.dayandnight = dayandnight
+        self.till = till
     }
     // Mark : Mappable
     func mapping(map: Map) {
@@ -41,6 +49,10 @@ class Carwash : Mappable{
         coordinate_longitude <- map["coordinate_longitude"]
         address <- map["address"]
         imagePath <- map["imagepath"]
+        phone <- map["phone"]
+        website <- map["website"]
+        dayandnight <- map["dayandnight"]
+        till <- map["till"]
     }
     
     //let carwash : Carwash? = Mapper<Carwash>().map(JSONString: carwashJson)
