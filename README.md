@@ -12,4 +12,4 @@ Server-side of the App: https://github.com/Said13/Carwashapp-Server-side
 
 Приложение еще не закончено.
 
-![first screen](/screenshots/carwash.jpg)
+![first screen](/screenshots/carwash.jpeg)
